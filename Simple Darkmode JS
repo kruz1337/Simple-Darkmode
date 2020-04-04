@@ -1,0 +1,49 @@
+<h2 style='text-align: center; font-family:sans-serif; font-weight:bold;'>CREATED BY THE_RABBIT#2931</h2>
+
+<center><button id='edarkmode' style='top: 100px' onclick='f_edarkmode()'>Enable DarkMode</button></center>
+<center><button id='ddarkmode' style='display:none;' onclick='f_ddarkmode()'>Disable DarkMode</button></center>
+
+<script>
+function f_edarkmode() {
+document.body.classList.toggle("dark-mode");
+
+document.getElementById("ddarkmode").style.display = "block";
+document.getElementById("edarkmode").style.display = "none";
+localStorage.setItem('darkmode', "true");
+}
+
+function f_ddarkmode() {
+document.body.classList.toggle("dark-mode");
+document.getElementById("ddarkmode").style.display = "none";
+document.getElementById("edarkmode").style.display = "block";
+localStorage.setItem('darkmode', "false");
+}
+</script>
+<script type='text/javascript'>
+
+window.onload=function dedarkmode() {
+var darkmode = localStorage.getItem("darkmode");
+     if (darkmode == "true") 
+	 {
+	 f_edarkmode();
+     }
+     else
+	 {
+
+	 }
+ };
+ 
+ </script>
+<style>
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+</style>
+
