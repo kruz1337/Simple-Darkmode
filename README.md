@@ -1,4 +1,4 @@
-I used Javascript, CSS and HTML, 
-I made dark mode that can record with the local storage function
+A simple dark mode feature
+Html, CSS and Javascript used
 
-CREATED BY THERABBIT#2931
+Created By The_Rabbit2931
